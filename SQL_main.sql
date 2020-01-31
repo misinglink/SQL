@@ -51,14 +51,8 @@ update actor set first_name = 'GROUCHO'
 where first_name = 'HARPO' and last_name = 'Williams';
 
 -- use query to recreate address schema
+-- i think this is wrong
 SHOW CREATE TABLE address;
--- or .. ?
-CREATE SCHEMA address;
-
-
--- ASK ABOUT INNER JOINS ND JOINS AND WHEN to use
--- and if i should use inners
-
 
 -- join staff and address to display people
 select  first_name, last_name, a.address
@@ -188,6 +182,6 @@ from sakila.top_5;
 
 -- delete the view
 DROP VIEW IF EXISTS
-    sakila.top_five_genres;
+    sakila.top_5;
 
 
